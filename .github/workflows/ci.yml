@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - feat/editorial-portfolio-v1
   pull_request:
 
 permissions:
