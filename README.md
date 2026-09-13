@@ -32,3 +32,12 @@ Open `http://localhost:3000`.
 ```bash
 npm run build
 ```
+
+## Security
+
+- No application secrets are required by the current portfolio build.
+- Environment files, Vercel metadata, build output, and local dependency folders are git-ignored.
+- Security headers are configured in `next.config.mjs`.
+- CI runs a high-severity dependency audit before the production build.
+- Dependabot checks npm dependencies weekly.
+- Preview deployments should remain protected until visual and CI review are complete.
