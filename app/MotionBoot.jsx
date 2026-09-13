@@ -11,13 +11,21 @@ export default function MotionBoot() {
       )
     );
 
+    const alreadyInView = (target) => {
+      const rect = target.getBoundingClientRect();
+      return rect.top < window.innerHeight * 0.92 && rect.bottom > 0;
+    };
+
+    targets.forEach((target) => {
+      if (alreadyInView(target)) target.classList.add("is-visible");
+    });
+
+    root.classList.add("motion-ready");
+
     if (!("IntersectionObserver" in window)) {
-      root.classList.add("motion-ready");
       targets.forEach((target) => target.classList.add("is-visible"));
       return;
     }
-
-    root.classList.add("motion-ready");
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -31,7 +39,9 @@ export default function MotionBoot() {
       { rootMargin: "0px 0px -12% 0px", threshold: 0.08 }
     );
 
-    targets.forEach((target) => observer.observe(target));
+    targets.forEach((target) => {
+      if (!target.classList.contains("is-visible")) observer.observe(target);
+    });
 
     return () => {
       observer.disconnect();
