@@ -1,0 +1,117 @@
+/* Motion is intentionally restrained: hierarchy first, decoration second. */
+.motion-ready .section,
+.motion-ready .footer,
+.motion-ready .hero-meta,
+.motion-ready .pipeline-panel,
+.motion-ready .real-shot-wrap,
+.motion-ready .flow-card,
+.motion-ready .reconstruction-flow {
+  opacity: 0;
+  transform: translateY(28px);
+}
+
+.motion-ready .section.is-visible,
+.motion-ready .footer.is-visible,
+.motion-ready .hero-meta.is-visible,
+.motion-ready .pipeline-panel.is-visible,
+.motion-ready .real-shot-wrap.is-visible,
+.motion-ready .flow-card.is-visible,
+.motion-ready .reconstruction-flow.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 620ms cubic-bezier(.2,.75,.2,1),
+    transform 620ms cubic-bezier(.2,.75,.2,1);
+}
+
+.motion-ready .real-shot-wrap.is-visible {
+  transition-delay: 90ms;
+}
+
+.motion-ready .reconstruction-flow.is-visible {
+  transition-delay: 110ms;
+}
+
+.hero-title span {
+  position: relative;
+  display: inline-block;
+}
+
+.hero-title span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: .03em;
+  height: .055em;
+  background: currentColor;
+  transform-origin: left;
+  animation: underlineIn 900ms 520ms cubic-bezier(.2,.8,.2,1) both;
+}
+
+.arrow-link,
+.navlinks a,
+.repo-grid a {
+  outline: none;
+}
+
+.arrow-link:focus-visible,
+.navlinks a:focus-visible,
+.wordmark:focus-visible,
+.repo-grid a:focus-visible,
+.button:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 5px;
+}
+
+.arrow-link span {
+  transition: transform 180ms ease;
+}
+
+.arrow-link:hover span,
+.arrow-link:focus-visible span {
+  transform: translate(3px,-3px);
+}
+
+.pipeline-panel,
+.flow-card,
+.repo-grid a,
+.real-shot-wrap {
+  will-change: transform;
+}
+
+@keyframes underlineIn {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+@media (max-width: 900px) {
+  .motion-ready .section,
+  .motion-ready .footer,
+  .motion-ready .hero-meta,
+  .motion-ready .pipeline-panel,
+  .motion-ready .real-shot-wrap,
+  .motion-ready .flow-card,
+  .motion-ready .reconstruction-flow {
+    transform: translateY(18px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-ready .section,
+  .motion-ready .footer,
+  .motion-ready .hero-meta,
+  .motion-ready .pipeline-panel,
+  .motion-ready .real-shot-wrap,
+  .motion-ready .flow-card,
+  .motion-ready .reconstruction-flow {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .hero-title span::after {
+    animation: none !important;
+    transform: scaleX(1);
+  }
+}

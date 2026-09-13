@@ -1,0 +1,48 @@
+.flow-card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.flow-card::after {
+  content: "";
+  position: absolute;
+  width: min(46%, 360px);
+  aspect-ratio: 4 / 3;
+  right: -18px;
+  bottom: -18px;
+  background:
+    linear-gradient(rgba(233,231,225,.72), rgba(233,231,225,.72)),
+    url("https://raw.githubusercontent.com/lemonwasp/tsunagaroom/main/src/main/webapp/img/family_background_home.png") center / cover no-repeat;
+  filter: grayscale(1) contrast(.9);
+  opacity: .42;
+  transform: rotate(-2deg);
+  border: 1px solid rgba(17,17,17,.14);
+  z-index: -1;
+}
+
+.flow-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.real-shot-wrap::after {
+  content: "ACTUAL PROJECT ASSET";
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  padding: 8px 10px;
+  background: rgba(16,16,16,.86);
+  border: 1px solid rgba(255,255,255,.2);
+  color: #f5f4ef;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: .14em;
+}
+
+@media (max-width: 900px) {
+  .flow-card::after {
+    width: 58%;
+    opacity: .26;
+  }
+}
