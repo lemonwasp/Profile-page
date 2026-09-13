@@ -1,4 +1,5 @@
 import "./globals.css";
+import "./motion.css";
 import MotionBoot from "./MotionBoot";
 
 export const metadata = {
