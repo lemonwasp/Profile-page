@@ -41,3 +41,5 @@ npm run build
 - CI runs a high-severity dependency audit before the production build.
 - Dependabot checks npm dependencies weekly.
 - Preview deployments should remain protected until visual and CI review are complete.
+
+<!-- vercel git integration trigger: 2026-09-13 -->
