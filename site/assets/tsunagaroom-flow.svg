@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" fill="none">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="720" y2="440" gradientUnits="userSpaceOnUse"><stop stop-color="#123A42"/><stop offset="1" stop-color="#081826"/></linearGradient></defs>
+  <rect width="720" height="440" rx="16" fill="url(#bg)"/>
+  <circle cx="644" cy="90" r="150" stroke="#57D6C5" opacity=".1"/><circle cx="644" cy="90" r="112" stroke="#57D6C5" opacity=".1"/>
+  <g font-family="Arial, sans-serif">
+    <text x="38" y="45" fill="#57D6C5" font-size="13" letter-spacing="2">CONNECTION, ON YOUR TIME</text><text x="38" y="76" fill="#EAF2FA" font-size="23" font-weight="700">A family update. A natural response.</text>
+    <rect x="38" y="107" width="280" height="182" rx="13" fill="#0B2032" stroke="#3D657E"/><path d="M38 138H318" stroke="#35536B"/>
+    <circle cx="54" cy="123" r="3" fill="#57D6C5"/><text x="66" y="127" fill="#ACC2D5" font-size="11" letter-spacing="1">FAMILY VIDEO</text>
+    <rect x="54" y="152" width="248" height="120" rx="7" fill="#153347"/>
+    <circle cx="126" cy="187" r="14" fill="#5B9CFF"/><path d="M98 240c0-47 57-47 57 0" fill="#5B9CFF" opacity=".5"/>
+    <circle cx="229" cy="190" r="12" fill="#E8B46A"/><path d="M205 240c0-40 48-40 48 0" fill="#E8B46A" opacity=".5"/>
+    <circle cx="179" cy="209" r="23" fill="#081826" stroke="#9DBAD2"/><path d="m174 199 15 10-15 10Z" fill="#EAF2FA"/>
+    <path d="M331 194h51m-8-8 8 8-8 8" stroke="#57D6C5" stroke-width="2"/>
+    <rect x="395" y="107" width="287" height="182" rx="13" fill="#0B2032" stroke="#57D6C5"/>
+    <circle cx="414" cy="123" r="3" fill="#E8B46A"/><text x="426" y="127" fill="#ACC2D5" font-size="11" letter-spacing="1">REACTION CAPTURE</text>
+    <circle cx="539" cy="185" r="24" fill="#57D6C5" opacity=".85"/><path d="M489 256c0-64 100-64 100 0" fill="#57D6C5" opacity=".3"/><path d="M514 192c16 13 34 13 50 0" stroke="#081826" stroke-width="3" stroke-linecap="round"/>
+    <text x="418" y="276" fill="#ACC2D5" font-size="12">Capture starts with video playback</text>
+    <rect x="38" y="315" width="644" height="74" rx="12" fill="#10283B" stroke="#35536B"/>
+    <text x="57" y="346" fill="#EAF2FA" font-size="17" font-weight="700">Save reaction</text><path d="M201 340h49m-7-7 7 7-7 7" stroke="#57D6C5" stroke-width="2"/><text x="268" y="346" fill="#EAF2FA" font-size="17" font-weight="700">Check success</text><path d="M422 340h42m-7-7 7 7-7 7" stroke="#57D6C5" stroke-width="2"/><text x="481" y="346" fill="#E8B46A" font-size="17" font-weight="700">Mark as read</text>
+    <text x="57" y="372" fill="#ACC2D5" font-size="13">Servlet → Logic → DAO → MySQL</text>
+    <text x="38" y="419" fill="#9CB5CB" font-size="12" letter-spacing="1">README FLOW / EXPLANATORY ILLUSTRATION</text>
+  </g>
+</svg>

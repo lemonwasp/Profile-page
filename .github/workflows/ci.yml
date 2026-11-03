@@ -14,6 +14,27 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  static-site:
+    name: Validate published portfolio source
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Check portfolio JavaScript
+        run: |
+          node --check site/app.js
+          node --check site/project-data.js
+
+      - name: Validate local assets and anchors
+        run: python3 scripts/check_static_site.py
+
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 10
@@ -27,7 +48,7 @@ jobs:
           node-version: 22
 
       - name: Install dependencies
-        run: npm install --no-fund
+        run: npm ci --no-fund
 
       - name: Audit production dependencies
         run: npm run security:audit

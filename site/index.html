@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#081826" />
+    <meta name="description" content="Taegwan Hong — backend-focused software engineer in Japan. Selected engineering work, open projects, and global experience." />
+    <meta property="og:title" content="Taegwan Hong — Software Engineer" />
+    <meta property="og:description" content="Engineering reliable systems and thoughtful experiences. Explore selected projects and the story behind them." />
+    <title>Taegwan Hong — Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="project-data.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner container">
+        <a class="brand" href="#top" aria-label="Taegwan Hong — Home"><span class="brand-mark">TH<span>.</span></span><span class="brand-name">TAEGWAN HONG</span></a>
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <a href="#about" data-i18n="navAbout">About</a>
+          <a href="#projects" data-i18n="navWork">Work</a>
+          <a href="#evidence" data-i18n="navEvidence">Evidence</a>
+          <a href="#journey" data-i18n="navJourney">Journey</a>
+          <a href="#contact" data-i18n="navContact">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <div class="language-switch" role="group" aria-label="Choose language">
+            <button class="lang-button is-active" data-lang="en" aria-pressed="true">EN</button>
+            <span class="lang-divider" aria-hidden="true"></span>
+            <button class="lang-button" data-lang="ja" aria-pressed="false">JP</button>
+          </div>
+          <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+        </div>
+      </div>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <a href="#about" data-i18n="navAbout">About</a><a href="#projects" data-i18n="navWork">Work</a><a href="#evidence" data-i18n="navEvidence">Evidence</a><a href="#journey" data-i18n="navJourney">Journey</a><a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+    </header>
+
+
+    <main id="main">
+      <section class="hero container" id="top" aria-labelledby="hero-title">
+        <div class="hero-main">
+          <div class="hero-copy reveal">
+            <div class="hero-eyebrow"><span class="pulse-dot"></span><span data-i18n="heroEyebrow">SOFTWARE ENGINEER · BASED IN JAPAN</span><span class="eyebrow-line"></span><span>2026</span></div>
+            <p class="hello" data-i18n="heroHello">Hello, I'm Taegwan Hong.</p>
+            <h1 id="hero-title"><span data-i18n="heroLine1">Engineering</span><br /><span class="gradient-text" data-i18n="heroLine2">what matters.</span></h1>
+            <p class="hero-description" data-i18n="heroDescription">Backend engineering with a focus on architecture, data pipelines, real-time systems, and reliability. I turn hands-on work—from enterprise software to AI prototypes—into tested, understandable systems.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects"><span data-i18n="exploreWork">Explore my work</span><span class="arrow-icon" aria-hidden="true">↗</span></a>
+              <a class="button button-text" href="https://github.com/lemonwasp" target="_blank" rel="noopener noreferrer"><span>GitHub</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg></a>
+            </div>
+          </div>
+
+          <div class="hero-art reveal" aria-label="Abstract visualization inspired by radar-based breathing monitoring">
+            <div class="orbit-grid"></div>
+            <div class="orbit orbit-outer"></div><div class="orbit orbit-mid"></div><div class="orbit orbit-inner"></div>
+            <div class="radar-sweep"></div>
+            <div class="radar-center"><span class="center-plus">+</span></div>
+            <div class="hero-art-caption"><span class="tiny-square"></span><span>IN SIGNAL, FIND MEANING.</span></div>
+            <div class="floating-card floating-card-top"><span class="floating-icon">⌁</span><div><small data-i18n="floatSignal">SIGNAL DETECTED</small><strong>60 GHz <span>RADAR</span></strong></div></div>
+            <div class="floating-card floating-card-bottom"><div class="mini-wave" aria-hidden="true"><svg viewBox="0 0 172 43" preserveAspectRatio="none"><path d="M0 23h12l6-3 7 8 8-21 8 29 8-12 6-1h16l7-3 7 6 7-15 7 22 7-10h15l7-3 8 5 7-12 7 20 7-10h14" /></svg></div><div class="floating-bottom"><span>LIVE / SENSOR</span><span class="live-dot"></span></div></div>
+            <span class="coordinate coordinate-a">RADAR / 60 GHz</span><span class="coordinate coordinate-b">SYS.01 / IBUKI</span>
+          </div>
+        </div>
+        <div class="hero-bottom reveal">
+          <div class="hero-proof"><span class="proof-number">01</span><span data-i18n="proofOne">Professional engineering role</span></div>
+          <div class="hero-proof"><span class="proof-number">04</span><span data-i18n="proofTwo">Selected public projects</span></div>
+          <div class="hero-proof"><span class="proof-number">2026</span><span data-i18n="proofThree">JPHACKS Audience Award</span></div>
+          <a href="#about" class="scroll-hint"><span data-i18n="scroll">SCROLL TO EXPLORE</span><span aria-hidden="true">↓</span></a>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about" aria-labelledby="about-heading">
+        <div class="container">
+          <div class="section-kicker reveal"><span class="kicker-index">01 /</span><span data-i18n="sectionAbout">ABOUT ME</span><span class="kicker-rule"></span></div>
+          <div class="about-grid">
+            <div class="about-left reveal">
+              <h2 class="section-heading" id="about-heading"><span data-i18n="aboutHead1">A builder at heart.</span><br /><span class="muted-heading" data-i18n="aboutHead2">A systems thinker by choice.</span></h2>
+              <p class="about-lead" data-i18n="aboutLead">I'm a backend-focused software engineer in Japan. I care about why a system is designed a certain way, how its data flows, and what happens when things fail.</p>
+              <p class="body-copy" data-i18n="aboutBody">My public work covers real-time WebSocket states, reproducible radar-data analysis, backend APIs, and team-built products. I learn by making small, reviewable changes, measuring their behavior, and writing tests before claiming improvement.</p>
+              <a class="inline-link" href="https://github.com/lemonwasp" target="_blank" rel="noopener noreferrer"><span data-i18n="aboutLink">See the engineering trail on GitHub</span><span>↗</span></a>
+            </div>
+            <div class="about-right reveal">
+              <div class="expertise-row"><span class="expertise-no">01</span><div><h3 data-i18n="pillarOneTitle">Backend & architecture</h3><p data-i18n="pillarOneText">C#/.NET, Java, TypeScript, SQL, clean boundaries, persistence, and testing.</p></div><span class="expertise-arrow">↗</span></div>
+              <div class="expertise-row"><span class="expertise-no">02</span><div><h3 data-i18n="pillarTwoTitle">Data & reliability</h3><p data-i18n="pillarTwoText">Python data pipelines, quality checks, Parquet schemas, signal analysis, and reproducible evaluation.</p></div><span class="expertise-arrow">↗</span></div>
+              <div class="expertise-row"><span class="expertise-no">03</span><div><h3 data-i18n="pillarThreeTitle">Real-time product systems</h3><p data-i18n="pillarThreeText">React, TypeScript, WebSocket connection states, alarms, and clear feedback for users.</p></div><span class="expertise-arrow">↗</span></div>
+              <div class="stack-panel"><span class="panel-label" data-i18n="workingWith">WORKING WITH</span><div class="stack-tags"><span>C# / .NET</span><span>Java</span><span>TypeScript</span><span>SQL</span><span>Python</span><span>FastAPI</span><span>WebSocket</span><span>Parquet</span><span>PostgreSQL</span><span>Docker</span></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects" aria-labelledby="projects-heading">
+        <div class="container">
+          <div class="section-kicker reveal"><span class="kicker-index">02 /</span><span data-i18n="sectionProjects">SELECTED WORK</span><span class="kicker-rule"></span></div>
+          <div class="section-header reveal"><div><h2 class="section-heading" id="projects-heading" data-i18n="projectsHead">Ideas, engineered.</h2><p class="section-subtitle" data-i18n="projectsSub">A few things I've helped bring to life—each with a different problem worth solving.</p></div><span class="section-counter">[ 01 — 04 ]</span></div>
+          <div class="projects-grid">
+            <article class="project-card project-featured reveal"><button type="button" class="project-trigger" data-project="ibuki" aria-label="View IBUKI project details"><div class="featured-content"><div class="project-topline"><span class="project-index">01 / FEATURED CASE STUDY</span><span class="project-award">✦ <span data-i18n="ibukiAward">TEAM AWARD</span></span></div><div class="featured-title"><div><span class="project-category" data-i18n="ibukiCategory">AI / IoT · TEAM PROJECT</span><h3>IBUKI <span>息吹</span></h3><p data-i18n="ibukiDesc">A camera-free 60 GHz radar breathing-monitoring prototype from JPHACKS 2026—not a clinically validated device.</p><div class="project-tech"><span>mmWave</span><span>Python</span><span>React</span><span>Edge AI</span></div></div></div><div class="project-open"><span data-i18n="viewCase">VIEW CASE STUDY</span><span class="circle-arrow">↗</span></div></div><div class="ibuki-visual" aria-hidden="true"><div class="visual-top"><span>IBUKI / CONCEPT UI</span><span class="status-pill"><i></i> DEMO MODE</span></div><div class="visual-radar"><div class="radar-mini-grid"></div><div class="mini-orbit orbit-one"></div><div class="mini-orbit orbit-two"></div><div class="mini-orbit orbit-three"></div><div class="radar-target"></div><div class="radar-crosshair h"></div><div class="radar-crosshair v"></div></div><div class="monitor-bottom"><span class="monitor-label">ILLUSTRATIVE SIGNAL</span><svg viewBox="0 0 320 50" preserveAspectRatio="none"><path d="M0 28C12 28 14 12 27 12S44 40 57 40 72 12 87 12 102 40 117 40 132 12 147 12 162 40 177 40 192 12 207 12 222 40 237 40 252 12 267 12 282 40 297 40 312 12 320 12" /></svg></div></div></button><dl class="project-story" data-project-story="ibuki"><div><dt data-case-label="role">MY ROLE</dt><dd data-case-value="role">Dashboard, Windows launcher and alarm, offline data analysis.</dd></div><div><dt data-case-label="problem">TECHNICAL PROBLEM</dt><dd data-case-value="problem">Make sensor states, startup and recorded radar data easier to inspect.</dd></div><div><dt data-case-label="implementation">IMPLEMENTATION</dt><dd data-case-value="implementation">WebSocket state UI, native audio, quality checks and Parquet / HTML reports.</dd></div><div><dt data-case-label="outcome">VERIFIED OUTCOME</dt><dd data-case-value="outcome">Hiroshima Audience Award (team); Windows and data work traceable in public PRs.</dd></div></dl></article>
+            <article class="project-card project-small project-ai reveal" aria-labelledby="project-title-ai">
+              <div class="project-topline"><span class="project-index">02 / APPLIED ML · RECONSTRUCTION</span><span class="project-icon" aria-hidden="true">↗</span></div>
+              <figure class="project-cover" data-project-cover="ai"><div class="project-cover-media"><img src="assets/ai-lead-flow.svg" alt="Illustration of synthetic CRM data, 18-feature modeling, and the model API, with a separate review and draft workflow" loading="lazy" decoding="async" width="720" height="440" /></div><figcaption>Explanatory illustration · based on the README</figcaption></figure>
+              <div class="small-copy"><h3 id="project-title-ai">AI Lead Conversion</h3><p data-i18n="aiDesc">A privacy-safe CRM reconstruction with synthetic data and a human-reviewed draft workflow.</p><div class="project-tech"><span>Python</span><span>FastAPI</span><span>XGBoost</span></div><dl class="project-story" data-project-story="ai"><div><dt data-case-label="role">MY ROLE</dt><dd data-case-value="role">Independent reconstruction across data, modeling, API and review UI.</dd></div><div><dt data-case-label="problem">TECHNICAL PROBLEM</dt><dd data-case-value="problem">Rebuild the historical workflow without exposing private CRM records.</dd></div><div><dt data-case-label="implementation">IMPLEMENTATION</dt><dd data-case-value="implementation">18-feature pipeline, XGBoost / Random Forest, FastAPI and outreach drafts.</dd></div><div><dt data-case-label="outcome">VERIFIED OUTCOME</dt><dd data-case-value="outcome">Prediction and draft endpoints implemented; API contract tests cover invalid input.</dd></div></dl></div>
+              <div class="project-card-footer"><a class="project-source" href="https://github.com/lemonwasp/ai-lead-conversion-platform/blob/2fa312d22ea0224a04776fff8268c4559dad9fc7/README.md" target="_blank" rel="noopener noreferrer">README <span aria-hidden="true">↗</span></a><button type="button" class="project-detail-button" data-project="ai" aria-label="View AI Lead Conversion Platform details"><span data-case-details>View details</span><span aria-hidden="true">↗</span></button></div>
+            </article>
+            <article class="project-card project-small project-leteatgo reveal" aria-labelledby="project-title-leteatgo">
+              <div class="project-topline"><span class="project-index">03 / SOCIAL DINING · TEAM BUILD</span><span class="project-icon" aria-hidden="true">↗</span></div>
+              <figure class="project-cover" data-project-cover="leteatgo"><div class="project-cover-media"><img src="assets/leteatgo-readme.webp" alt="Social dining photo collage used as the Let Eat Go frontend README cover" loading="lazy" decoding="async" width="2048" height="738" /></div><figcaption>Actual README cover image · not a product screenshot</figcaption></figure>
+              <div class="small-copy"><h3 id="project-title-leteatgo">Let Eat Go</h3><p data-i18n="eatDesc">A social dining platform built with separate web, backend API and AI services.</p><div class="project-tech"><span>Next.js</span><span>NestJS</span><span>TypeScript</span></div><dl class="project-story" data-project-story="leteatgo"><div><dt data-case-label="role">MY ROLE</dt><dd data-case-value="role">Backend contributor: entities, authentication and album features.</dd></div><div><dt data-case-label="problem">TECHNICAL PROBLEM</dt><dd data-case-value="problem">Keep user, chat-room and image relationships consistent across the API.</dd></div><div><dt data-case-label="implementation">IMPLEMENTATION</dt><dd data-case-value="implementation">Entity relations, album backend, Comment DTO fixes and S3 deletion behavior.</dd></div><div><dt data-case-label="outcome">VERIFIED OUTCOME</dt><dd data-case-value="outcome">These contributions are attributed in the API README and public commit history.</dd></div></dl></div>
+              <div class="project-card-footer"><a class="project-source" href="https://github.com/YJU-5/project-leteatgo-nestjs-repo/blob/main/README.md" target="_blank" rel="noopener noreferrer">README <span aria-hidden="true">↗</span></a><button type="button" class="project-detail-button" data-project="leteatgo" aria-label="View Let Eat Go details"><span data-case-details>View details</span><span aria-hidden="true">↗</span></button></div>
+            </article>
+            <article class="project-card project-small project-tsunagaroom reveal" aria-labelledby="project-title-tsunagaroom">
+              <div class="project-topline"><span class="project-index">04 / FAMILY COMMUNICATION · TEAM BUILD</span><span class="project-icon" aria-hidden="true">↗</span></div>
+              <figure class="project-cover" data-project-cover="tsunagaroom"><div class="project-cover-media"><img src="assets/tsunagaroom-flow.svg" alt="Explanatory illustration of a family video playing for a senior, reaction capture, and a read-state update" loading="lazy" decoding="async" width="720" height="440" /></div><figcaption>Explanatory illustration · based on the README</figcaption></figure>
+              <div class="small-copy"><h3 id="project-title-tsunagaroom">Tsunagaroom</h3><p data-i18n="tsunaDesc">Asynchronous video communication that connects older adults and their families.</p><div class="project-tech"><span>Java 21</span><span>Jakarta Servlet</span><span>JSP</span></div><dl class="project-story" data-project-story="tsunagaroom"><div><dt data-case-label="role">MY ROLE</dt><dd data-case-value="role">System / interaction design and parts of recording and upload behavior.</dd></div><div><dt data-case-label="problem">TECHNICAL PROBLEM</dt><dd data-case-value="problem">Link video playback, reaction capture and unread / read state in a simple flow.</dd></div><div><dt data-case-label="implementation">IMPLEMENTATION</dt><dd data-case-value="implementation">Servlet → Logic → DAO structure, reaction storage and watched-state updates.</dd></div><div><dt data-case-label="outcome">VERIFIED OUTCOME</dt><dd data-case-value="outcome">The source saves a reaction before updating the watched video’s read status.</dd></div></dl></div>
+              <div class="project-card-footer"><a class="project-source" href="https://github.com/lemonwasp/tsunagaroom/blob/61edfa3c2d245a8c7fbb9a7d142dc5471184404f/README.md" target="_blank" rel="noopener noreferrer">README <span aria-hidden="true">↗</span></a><button type="button" class="project-detail-button" data-project="tsunagaroom" aria-label="View Tsunagaroom details"><span data-case-details>View details</span><span aria-hidden="true">↗</span></button></div>
+            </article>
+          </div>
+          <div class="projects-footer reveal"><span data-i18n="projectFoot">Curious about the implementation details?</span><a class="inline-link" href="https://github.com/lemonwasp?tab=repositories" target="_blank" rel="noopener noreferrer"><span data-i18n="allRepos">Browse all repositories</span><span>↗</span></a></div>
+        </div>
+      </section>
+
+      <section class="section evidence-section" id="evidence" aria-labelledby="evidence-heading">
+        <div class="container">
+          <div class="section-kicker reveal"><span class="kicker-index">03 /</span><span data-i18n="sectionEvidence">ENGINEERING EVIDENCE</span><span class="kicker-rule"></span></div>
+          <div class="section-header evidence-header reveal"><div><h2 class="section-heading" id="evidence-heading" data-i18n="evidenceHead">Beyond the demo.</h2><p class="section-subtitle" data-i18n="evidenceSub">Actual artifacts from IBUKI: where real-time interfaces, signal processing, and reliability meet.</p></div><a class="inline-link" href="https://github.com/jphacks/hs_2605" target="_blank" rel="noopener noreferrer"><span data-i18n="evidenceRepo">Explore the source</span><span>↗</span></a></div>
+          <div class="evidence-gallery">
+            <a class="evidence-card evidence-main reveal" href="assets/ibuki-dashboard.png" target="_blank" rel="noopener noreferrer"><span class="evidence-media evidence-dashboard"><img src="assets/ibuki-dashboard.png" alt="IBUKI dashboard showing recorded respiratory data playback and sensor-status panels" loading="lazy" width="1280" height="1165" /></span><span class="evidence-caption"><span class="evidence-number">01 / REAL UI</span><strong data-i18n="evidenceDashboardTitle">Monitoring dashboard</strong><span data-i18n="evidenceDashboardDesc">Recorded data playback, not a live infant-monitoring claim.</span></span></a>
+            <a class="evidence-card reveal" href="assets/ibuki-alarm.png" target="_blank" rel="noopener noreferrer"><span class="evidence-media evidence-alarm"><img src="assets/ibuki-alarm.png" alt="IBUKI alarm user interface prototype" loading="lazy" width="1280" height="1303" /></span><span class="evidence-caption"><span class="evidence-number">02 / USER EXPERIENCE</span><strong data-i18n="evidenceAlarmTitle">Alarm &amp; recovery states</strong><span data-i18n="evidenceAlarmDesc">A clear response flow, with Windows-native alarm playback.</span></span></a>
+            <a class="evidence-card reveal" href="assets/ibuki-signal.png" target="_blank" rel="noopener noreferrer"><span class="evidence-media evidence-signal"><img src="assets/ibuki-signal.png" alt="Respiratory signal plot measured in an adult test" loading="lazy" width="1600" height="820" /></span><span class="evidence-caption"><span class="evidence-number">03 / MEASURED DATA</span><strong data-i18n="evidenceSignalTitle">Signal analysis</strong><span data-i18n="evidenceSignalDesc">Adult-test breathing signal; not medical validation.</span></span></a>
+          </div>
+          <div class="evidence-details reveal">
+            <div class="evidence-detail"><span class="evidence-detail-index">01 /</span><h3 data-i18n="evidenceLayer1">Real-time state, made legible</h3><p data-i18n="evidenceLayer1Body">React and WebSocket interfaces that distinguish connecting, stale, and disconnected states.</p><a href="https://github.com/jphacks/hs_2605/pull/77" target="_blank" rel="noopener noreferrer">PR #77 ↗</a></div>
+            <div class="evidence-detail"><span class="evidence-detail-index">02 /</span><h3 data-i18n="evidenceLayer2">Data you can inspect</h3><p data-i18n="evidenceLayer2Body">Offline radar parsing, quality checks, Parquet export, STFT views, and shareable reports.</p><a href="https://github.com/jphacks/hs_2605/pull/112" target="_blank" rel="noopener noreferrer">PR #112 ↗</a></div>
+            <div class="evidence-detail"><span class="evidence-detail-index">03 /</span><h3 data-i18n="evidenceLayer3">Explain the invisible</h3><p data-i18n="evidenceLayer3Body">2D Radar Explorer and conceptual 3D crib scenes to make sensing behavior understandable.</p><a href="https://github.com/jphacks/hs_2605/pull/119" target="_blank" rel="noopener noreferrer">PR #119 ↗</a></div>
+          </div>
+          <div class="evidence-trail reveal"><span data-i18n="evidenceTrailLabel">SELECTED IMPLEMENTATION TRAIL</span><a href="https://github.com/jphacks/hs_2605/pull/39" target="_blank" rel="noopener noreferrer">WebSocket UI <em>PR #39 ↗</em></a><a href="https://github.com/jphacks/hs_2605/pull/66" target="_blank" rel="noopener noreferrer">Windows &amp; Alarm <em>PR #66 ↗</em></a><a href="https://github.com/jphacks/hs_2605/pull/126" target="_blank" rel="noopener noreferrer">Showcase <em>PR #126 ↗</em></a></div>
+          <div class="recognition-banner reveal"><div class="recognition-mark">✳</div><div><span class="recognition-label" data-i18n="recognitionLabel">OPEN CONTRIBUTION / XERJ CORPUS HUB</span><h3 data-i18n="recognitionHead">A public trail of shipped work.</h3><p data-i18n="recognitionBody">The XERJ contributor profile records the Windows launcher and native alarm playback commit, with attributable changes.</p></div><a class="inline-link" href="https://hub.xerj.org/contributors/lemonwasp" target="_blank" rel="noopener noreferrer"><span data-i18n="recognitionLink">View contribution</span><span>↗</span></a></div>
+          <p class="evidence-caveat" data-i18n="evidenceCaveat">Engineering artifacts are from the JPHACKS team prototype. Tests documented in the repository were conducted on adults, not infants. IBUKI is not a medical device.</p>
+        </div>
+      </section>
+
+      <section class="section journey-section" id="journey" aria-labelledby="journey-heading">
+        <div class="container">
+          <div class="section-kicker reveal"><span class="kicker-index">04 /</span><span data-i18n="sectionJourney">THE JOURNEY</span><span class="kicker-rule"></span></div>
+          <div class="journey-grid">
+            <div class="journey-intro reveal">
+              <h2 class="section-heading" id="journey-heading"><span data-i18n="journeyHead1">Always building.</span><br /><span class="muted-heading" data-i18n="journeyHead2">Always learning.</span></h2>
+              <p class="section-subtitle" data-i18n="journeySub">A path shaped by team projects, hands-on engineering, and learning in new environments.</p>
+              <div class="journey-quote"><span class="quote-mark">“</span><p data-i18n="journeyQuote">Build. Find a limitation. Understand. Improve. Test. Review. Repeat.</p></div>
+            </div>
+            <div class="timeline reveal">
+              <div class="timeline-item"><div class="timeline-dot"></div><span class="timeline-date" data-i18n="dateTis">2026 — PRESENT</span><h3 data-i18n="tisTitle">Software Engineer · TIS West Japan</h3><p data-i18n="tisBody">Working on enterprise software with C#/.NET and web technologies, developing practical experience in system design and performance improvement. Client details are intentionally omitted.</p><span class="timeline-type" data-i18n="typeWork">PROFESSIONAL EXPERIENCE</span></div>
+              <div class="timeline-item"><div class="timeline-dot"></div><span class="timeline-date" data-i18n="dateJphacks">OCTOBER 2026</span><h3 data-i18n="jphacksTitle">JPHACKS 2026 · Hack Day Audience Award</h3><p data-i18n="jphacksBody">Our IBUKI team received the Hiroshima venue Audience Award. I contributed to user-facing dashboards and the Windows launch/alarm experience.</p><span class="timeline-type" data-i18n="typeAward">TEAM ACHIEVEMENT</span></div>
+              <div class="timeline-item"><div class="timeline-dot"></div><span class="timeline-date" data-i18n="degreeProgressDate">2026 — 2028 (EXPECTED)</span><h3 data-i18n="degreeProgressTitle">Bachelor’s studies · AI Engineering</h3><p data-i18n="degreeProgressBody">Korea National Open University, Prime College · Division of Advanced Engineering (AI). Currently enrolled; expected graduation February 2028.</p><span class="timeline-type" data-i18n="degreeProgressType">EDUCATION IN PROGRESS</span></div>
+              <div class="timeline-item"><div class="timeline-dot"></div><span class="timeline-date" data-i18n="dateDegree">FEBRUARY 2026</span><h3 data-i18n="degreeTitle">Associate Degree of Engineering</h3><p data-i18n="degreeBody">Yeungjin College · Division of Computer Information (Cloud / Japan IT). Micro Degree in AI + Japan IT.</p><span class="timeline-type" data-i18n="typeEdu">EDUCATION</span></div>
+              <div class="timeline-item"><div class="timeline-dot"></div><span class="timeline-date" data-i18n="dateGlobal">EARLIER EXPERIENCES</span><h3 data-i18n="globalTitle">Learning beyond borders</h3><p data-i18n="globalBody">AI training in Germany, an international internship in Uzbekistan, and cultural experience across Japan, Korea, and Europe.</p><span class="timeline-type" data-i18n="typeGlobal">INTERNATIONAL EXPERIENCE</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section global-section" id="perspective" aria-labelledby="global-heading">
+        <div class="container">
+          <div class="global-card reveal">
+            <div class="global-copy">
+              <div class="section-kicker"><span class="kicker-index">05 /</span><span data-i18n="sectionPerspective">PERSPECTIVE</span></div>
+              <h2 id="global-heading" data-i18n="globalHeading">Rooted in engineering.<br>Open to the world.</h2>
+              <p data-i18n="globalText">From software engineering in Japan to AI training in Germany, each new setting has taught me to communicate, adapt, and solve unfamiliar problems. I'm building toward teams where deep technical work meets global collaboration.</p>
+              <div class="language-line"><span data-i18n="languageLabel">LANGUAGES</span><strong data-i18n="languageLevels">한국어 · Native / 日本語 · JLPT N1 / English · B2</strong></div>
+            </div>
+            <div class="globe-art" aria-hidden="true"><div class="globe-circle"><div class="globe-lat globe-lat-one"></div><div class="globe-lat globe-lat-two"></div><div class="globe-long globe-long-one"></div><div class="globe-long globe-long-two"></div><span class="globe-pin pin-one"></span><span class="globe-pin pin-two"></span><span class="globe-pin pin-three"></span></div><span class="globe-label label-one">JAPAN</span><span class="globe-label label-two">EUROPE</span><span class="globe-label label-three">KOREA</span></div>
+          </div>
+          <div class="global-experiences reveal">
+            <span class="global-experiences-label" data-i18n="globalExpLabel">WORK &amp; LEARNING ACROSS BORDERS</span>
+            <div class="global-exp-grid">
+              <div class="global-exp"><span class="global-exp-index">01 / <span data-i18n="globalExpJapan">Japan</span></span><p data-i18n="globalExpJapanBody">Enterprise software engineering · 2026–present</p></div>
+              <div class="global-exp"><span class="global-exp-index">02 / <span data-i18n="globalExpGermany">Germany</span></span><p data-i18n="globalExpGermanyBody">One-month intensive AI training and team hackathon · Ulm</p></div>
+              <div class="global-exp"><span class="global-exp-index">03 / <span data-i18n="globalExpUzbekistan">Uzbekistan</span></span><p data-i18n="globalExpUzbekistanBody">One-week international internship · cross-cultural work</p></div>
+              <div class="global-exp"><span class="global-exp-index">04 / <span data-i18n="globalExpRomania">Romania</span></span><p data-i18n="globalExpRomaniaBody">One-month independent stay · language and daily life</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-heading"><div class="container"><div class="contact-inner reveal"><div class="section-kicker"><span class="kicker-index">06 /</span><span data-i18n="sectionContact">GET IN TOUCH</span><span class="kicker-rule"></span></div><div class="contact-topline"><span class="pulse-dot"></span><span data-i18n="contactStatus">OPEN TO MEANINGFUL CONVERSATIONS</span></div><h2 id="contact-heading"><span data-i18n="contactHead1">Let's build</span><br/><span class="gradient-text" data-i18n="contactHead2">what's next.</span></h2><p data-i18n="contactBody">Interested in engineering, thoughtful products, or cross-border collaboration? I'd love to connect.</p><a class="button button-primary contact-button" href="https://github.com/lemonwasp" target="_blank" rel="noopener noreferrer"><span data-i18n="contactCta">Connect on GitHub</span><span class="arrow-icon">↗</span></a></div></div></section>
+    </main>
+
+    <footer class="site-footer"><div class="container footer-inner"><div><a class="footer-brand" href="#top">TH<span>.</span></a><p data-i18n="footerTag">Built with curiosity. Based in Japan.</p></div><span class="footer-note" data-i18n="footerNote">Public projects and personal contributions are identified separately.</span><div class="footer-right"><a href="https://github.com/lemonwasp" target="_blank" rel="noopener noreferrer">GITHUB ↗</a><span>© <span id="year">2026</span> TAEGWAN HONG</span></div></div></footer>
+
+    <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-intro">
+      <div class="dialog-toolbar"><button class="dialog-close" type="button" aria-label="Close project details">×</button></div>
+      <div class="dialog-shell"><div class="dialog-content">
+        <span class="dialog-eyebrow" id="dialog-category"></span><h2 id="dialog-title"></h2><p class="dialog-intro" id="dialog-intro"></p>
+        <figure class="dialog-media" id="dialog-media"><img id="dialog-image" alt="" width="720" height="440" /><figcaption id="dialog-image-caption"></figcaption></figure>
+        <div class="dialog-info-grid">
+          <section><h3 id="dialog-role-label">MY ROLE</h3><ul id="dialog-role"></ul></section>
+          <section><h3 id="dialog-problem-label">TECHNICAL PROBLEM</h3><ul id="dialog-problem"></ul></section>
+          <section><h3 id="dialog-implementation-label">IMPLEMENTATION</h3><ul id="dialog-implementation"></ul></section>
+          <section><h3 id="dialog-outcome-label">VERIFIED OUTCOME</h3><ul id="dialog-outcome"></ul></section>
+        </div>
+        <div class="dialog-evidence"><h3 id="dialog-sources-label">SOURCE EVIDENCE</h3><div id="dialog-sources"></div></div>
+        <div class="dialog-stack" id="dialog-stack"></div><a id="dialog-link" class="button button-primary dialog-link" target="_blank" rel="noopener noreferrer" href="#"><span id="dialog-link-text">VIEW REPOSITORY</span><span class="arrow-icon" aria-hidden="true">↗</span></a><p class="dialog-disclaimer" id="dialog-disclaimer"></p>
+      </div></div>
+    </dialog>
+  </body>
+</html>

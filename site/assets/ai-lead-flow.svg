@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" fill="none">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="720" y2="440" gradientUnits="userSpaceOnUse"><stop stop-color="#102C43"/><stop offset="1" stop-color="#081826"/></linearGradient></defs>
+  <rect width="720" height="440" rx="16" fill="url(#bg)"/>
+  <g stroke="#24445D" opacity=".5"><path d="M0 88H720M0 176H720M0 264H720M0 352H720M90 0V440M180 0V440M270 0V440M360 0V440M450 0V440M540 0V440M630 0V440"/></g>
+  <g font-family="Arial, sans-serif">
+    <text x="38" y="45" fill="#57D6C5" font-size="13" letter-spacing="2">DATA TO DECISION</text><text x="38" y="76" fill="#EAF2FA" font-size="23" font-weight="700">Rebuild the workflow. Keep the boundary.</text>
+    <rect x="38" y="111" width="184" height="128" rx="12" fill="#10283B" stroke="#3D657E"/>
+    <g stroke="#57D6C5" stroke-width="2"><ellipse cx="65" cy="140" rx="12" ry="5"/><path d="M53 140v15c0 7 24 7 24 0v-15M53 147c0 7 24 7 24 0"/></g>
+    <text x="54" y="187" fill="#EAF2FA" font-size="19" font-weight="700">Synthetic CRM</text><text x="54" y="213" fill="#ACC2D5" font-size="14">Leads + notes</text>
+    <path d="M230 175h30m-7-7 7 7-7 7" stroke="#5B9CFF" stroke-width="2"/>
+    <rect x="270" y="111" width="180" height="128" rx="12" fill="#132D47" stroke="#5B9CFF"/>
+    <text x="287" y="153" fill="#5B9CFF" font-size="31" font-weight="700">18</text><text x="287" y="187" fill="#EAF2FA" font-size="19" font-weight="700">Feature pipeline</text><text x="287" y="213" fill="#ACC2D5" font-size="14">Deterministic split</text>
+    <path d="M458 175h30m-7-7 7 7-7 7" stroke="#5B9CFF" stroke-width="2"/>
+    <rect x="498" y="111" width="184" height="128" rx="12" fill="#10283B" stroke="#3D657E"/>
+    <text x="515" y="151" fill="#E8B46A" font-size="17" font-weight="700">{ API }</text><text x="515" y="187" fill="#EAF2FA" font-size="19" font-weight="700">Model boundary</text><text x="515" y="213" fill="#ACC2D5" font-size="14">FastAPI / XGBoost</text>
+    <rect x="38" y="266" width="644" height="124" rx="12" fill="#0B2032" stroke="#35536B"/>
+    <circle cx="62" cy="291" r="4" fill="#E8B46A"/><text x="76" y="297" fill="#E8B46A" font-size="12" letter-spacing="1">SEPARATE REVIEW + DRAFT FLOW</text>
+    <text x="57" y="333" fill="#EAF2FA" font-size="18" font-weight="700">React review</text><path d="M208 327h43m-7-7 7 7-7 7" stroke="#57D6C5" stroke-width="2"/><text x="268" y="333" fill="#EAF2FA" font-size="18" font-weight="700">Draft API</text><path d="M372 327h43m-7-7 7 7-7 7" stroke="#57D6C5" stroke-width="2"/><text x="432" y="333" fill="#EAF2FA" font-size="18" font-weight="700">Human review</text>
+    <text x="57" y="367" fill="#ACC2D5" font-size="14">Prediction display uses a fixture; model API connection is pending.</text>
+    <text x="38" y="419" fill="#9CB5CB" font-size="12" letter-spacing="1">README FLOW / EXPLANATORY ILLUSTRATION</text>
+  </g>
+</svg>
