@@ -29,6 +29,7 @@ Open <http://localhost:8000>. Do not open `index.html` as a `file://` URL when c
 - [`site/project-data.js`](site/project-data.js): EN / JP case studies, source evidence and image captions
 - [`site/app.js`](site/app.js): translations, dialogs and navigation
 - [`site/ASSET_SOURCES.md`](site/ASSET_SOURCES.md): asset provenance and verification boundaries
+- [`scripts/check_static_site.py`](scripts/check_static_site.py): CI checks for local assets, anchors and duplicate IDs
 
 No credentials or runtime secrets are needed for this static edition. Hosting-specific identity and temporary QA files are not included.
 
@@ -37,7 +38,7 @@ No credentials or runtime secrets are needed for this static edition. Hosting-sp
 The earlier Next.js implementation remains in `app/`, with its root `package.json` and `next.config.mjs`. See [its setup and design notes](docs/nextjs-portfolio.md).
 
 ```bash
-npm install
+npm ci
 npm run dev
 npm run build
 ```
@@ -46,6 +47,8 @@ The `site/` directory is the source snapshot of the currently published edition.
 
 ## Verification
 
+- CI checks the static edition and the existing Next.js build as separate jobs
+- Dependencies are locked for reproducible `npm ci` installs and checked with `npm run security:audit`
 - JavaScript syntax checks and static asset / internal-anchor validation
 - EN / JP text and all four project detail dialogs
 - Desktop, 320px / 390px narrow layouts and a 768px tablet layout
